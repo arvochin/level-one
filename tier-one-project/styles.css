@@ -1,0 +1,287 @@
+:root{
+    --primary-color: #172736;
+    --secondary-color: #3498db;
+    --accent-color: #f4ed6e;
+    --background-light: #ecf0f1;
+    --text-color: #333;
+    --white: #fff;
+}
+
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: Arial, Helvetica, sans-serif;
+}
+
+body{
+    padding: 0;
+    margin: 0;
+}
+
+h1{
+    margin: 20px;
+}
+
+/* Header */
+header{
+    background-color: var(--primary-color);
+    padding: 20px;
+}
+
+nav ul{
+    display: flex;
+    justify-content: center;
+    padding: 0;
+    list-style: none;
+    gap: 20px;
+}
+
+nav a{
+    text-decoration: none;
+    color: #e6e6e6;
+    transition: color 0.3s ease;
+}
+
+nav a:hover{
+    color: var(--white);
+}
+
+/* main page */
+
+.search-container{
+    display: flex;
+    justify-content: center;
+    padding: 10px;
+    transform: scale(1.2);
+    background-color: #cacaca;
+}
+
+#movieInput{
+    border-radius: 5px 0px 0px 5px;
+    border: none;
+    padding: 5px;
+    transition: all 0.3s ease;
+}
+
+#movieInput:focus{
+    outline: none;
+}
+
+#movieSearchBtn{
+    border-radius: 0px 5px 5px 0px;
+    border: none;
+    background-color: #5f98c2;
+    text-transform: uppercase;
+    width: 30px;
+    transition: all 0.3s ease;
+}
+
+#movieSearchBtn:hover{
+    background-color: #7eb0d4;
+}
+
+.movie-grid{
+    display: grid;
+    grid-template-columns: repeat(auto-fill, minmax(300px, 1fr));
+    gap: 30px;
+    margin-top: 40px;
+}
+
+.movie-card {
+    background: rgba(228, 228, 228, 0.95);
+    border-radius: 10px;
+    box-shadow: 0 10px 30px rgba(0,0,0,0.2);
+    transition: all 0.3s ease;
+    cursor: pointer;
+}
+
+.movie-poster {
+    width: 100%;
+    height: 300px;
+    object-fit: cover;
+    background: #f0f0f0;
+}
+
+.movie-title {
+    font-size: 20px;
+    font-weight: bold;
+    margin-bottom: 2px;
+    color: #151515;
+}
+
+.movie-year {
+    color: #272727;
+    font-size: 15px;
+    margin-bottom: 10px;
+}
+
+.movie-type {
+    background: #174f80;
+    color: white;
+    padding: 5px 15px;
+    border-radius: 5px;
+    font-size: 10px;
+    display: inline-block;
+    text-transform: uppercase;
+    font-weight: bold;
+}
+
+.movie-add button{
+    background-color: rgb(109, 255, 119);
+    border-style: none;
+    border-radius: 20px;
+    width: 30px;
+    height: 30px;
+    margin: 5px;
+    font-size: 20px;
+    
+}
+
+.movie-add button:hover{
+    background-color: rgb(92, 199, 98);
+}
+
+
+
+.list-grid{
+    display: grid;
+    grid-template-columns: repeat(auto-fill, minmax(300px, 1fr));
+    gap: 30px;
+    margin-top: 40px;
+    margin-left: 40px;
+}
+
+.list-card {
+    background: rgba(228, 228, 228, 0.95);
+    border-radius: 10px;
+    box-shadow: 0 10px 30px rgba(0,0,0,0.2);
+    transition: all 0.3s ease;
+    cursor: pointer;
+}
+
+.list-poster {
+    width: 100%;
+    height: 300px;
+    object-fit: cover;
+    background: #f0f0f0;
+}
+
+.list-title {
+    font-size: 20px;
+    font-weight: bold;
+    margin-bottom: 2px;
+    color: #151515;
+}
+
+.list-year {
+    color: #272727;
+    font-size: 15px;
+    margin-bottom: 10px;
+}
+
+.list-type {
+    background: #174f80;
+    color: white;
+    padding: 5px 15px;
+    border-radius: 5px;
+    font-size: 10px;
+    display: inline-block;
+    text-transform: uppercase;
+    font-weight: bold;
+}
+
+.list-remove button{
+    background-color: rgb(252, 87, 87);
+    border-style: none;
+    border-radius: 20px;
+    width: 30px;
+    height: 30px;
+    margin: 5px;
+    font-size: 20px;
+    
+}
+
+.list-remove button:hover{
+    background-color: rgb(189, 67, 67);
+}
+
+
+/* contact page css */
+.form-container{
+    display: flex;
+    flex-direction: column;
+    margin: 20px;
+    padding: 20px;
+    background-color: lightblue;
+    border-radius: 10px;
+    max-width: 500px;
+    gap: 10px;
+    box-shadow: 2px 2px 5px 1px rgba(0, 0, 0, 0.3);
+}
+
+form{
+    display: flex;
+    flex-direction: column;
+    gap: 10px;
+}
+
+.form-container input{
+    border: none;
+    border-radius: 5px;
+    height: 25px;
+    padding: 5px;
+    font-size: 16px;
+    transition: all 0.3 ease;
+}
+
+.form-container input:focus{
+    outline: none;
+}
+
+.form-container label{
+    font-weight: bold;
+}
+
+.form-container button{
+    background-color: var(--primary-color);
+    color: var(--background-light);
+    text-transform: uppercase;
+    border: none;
+    border-radius: 3px;
+    width: 80px;
+    height: 30px;
+    margin: 0 auto;
+    transition: all 0.3s ease;
+}
+
+.form-container button:hover{
+    background-color:#233b51;
+}
+
+/* about page */
+.about-desc{
+    margin: 20px;
+}
+
+
+/* footer */
+footer{
+    padding: 20px;
+    margin-top: 20px;
+    background-color: #373737;
+}
+
+@media(max-width: 768px){
+
+    nav ul{
+        flex-direction: column;
+        align-items: center;
+    }
+}
+
+@media(max-width: 480px) {
+    header{
+        font-size: 14px;
+    }
+}
