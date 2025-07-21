@@ -13,8 +13,8 @@ document.addEventListener("DOMContentLoaded", ()=>{
         searchBtn.addEventListener('click', () => {
             getMovies(searchInput.value);
         });
-        searchBtn.addEventListener('keypress', (key) => {
-            if(key==='Enter'){
+        searchInput.addEventListener('keypress', (e) => {
+            if(e.key==='Enter'){
                 getMovies(searchInput.value);
             }
             
